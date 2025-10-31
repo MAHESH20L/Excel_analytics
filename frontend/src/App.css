@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%, #b2f1da 100%, #e7affc 100%);
+}
+
+.dataviz-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #4753c7 10%, #9e70ef 40%, #d4b7fa 80%, #b6efdc 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.dataviz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem 1rem 2rem;
+  background: transparent;
+}
+
+.dataviz-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: #1a2cc7;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #232345;
+  letter-spacing: 0.03em;
+}
+
+.upload-btn {
+  background: #296ef2;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 1.5rem;
+  transition: background 0.2s;
+}
+
+.upload-btn:hover {
+  background: #1241a3;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-moon {
+  font-size: 1.6rem;
+  color: #38386a;
+}
+
+.icon-user {
+  font-size: 1.6rem;
+  color: #38386a;
+}
+.primary-btn.highlight {
+  border: 2px solid #f39c12;
+  box-shadow: 0 0 8px #f39c12;
+}
+
+.primary-btn:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Hover highlight on disabled buttons after login */
+.primary-btn:disabled:hover {
+  opacity: 1;
+  box-shadow: 0 0 8px #3498db;
+  transition: box-shadow 0.3s ease;
+}
+
+
+/* Main Content */
+.dataviz-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #f9fafc;
+  margin-bottom: 28px;
+  margin-top: 36px;
+  text-shadow: 0 2px 12px #5c4e8f44;
+}
+
+.main-desc {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #f3f3fa;
+  margin-bottom: 50px;
+  text-shadow: 0 1px 6px #4e5ec822;
+  max-width: 650px;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Button Styles */
+.primary-btn, .secondary-btn {
+  padding: 18px 42px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.primary-btn {
+  background: #256efb;
+  color: #fff;
+  box-shadow: 0 3px 12px #2a3ca377;
+}
+
+.primary-btn:hover {
+  background: #1641a3;
+}
+
+.secondary-btn {
+  background: #f6f6fbcc;
+  color: #1c2f94;
+  border: 1.5px solid #c5c6e5;
+  box-shadow: 0 2px 10px #c8c7e177;
+}
+
+.secondary-btn:hover {
+  background: #cbcfffcc;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .main-title {
+    font-size: 2.3rem;
+  }
+  .main-desc {
+    font-size: 1.1rem;
+  }
+  .dataviz-header {
+    padding: 1rem 1.5rem;
+  }
+  .primary-btn, .secondary-btn {
+    padding: 13px 20px;
+    font-size: 1rem;
+  }
+}
